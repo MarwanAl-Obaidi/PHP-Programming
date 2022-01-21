@@ -1,0 +1,1 @@
+Your favorite color is <?php echo $_GET["favcolor"];?> and favorite food is <?php echo $_GET["favfood"];?>

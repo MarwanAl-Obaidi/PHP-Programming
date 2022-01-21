@@ -1,5 +1,5 @@
 # PHP-Programming
-A course I did that teaches the basics of PHP
+A course I did that goes through the basics of PHP and teaches the student to have the ability to understand, write and maintain PHP code.
 
 ## Contents
 - Introduction

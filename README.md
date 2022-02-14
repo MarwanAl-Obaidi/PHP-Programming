@@ -67,3 +67,28 @@ Example output:
 ```
 Your favorite color is White and favorite food is Pie
 ```
+
+## ex_4_1
+Create a PHP script which prints one of the following sentences depending on the values input on the form:
+
+- "Coffee with sugar!"
+- "Coffee without sugar."
+- "Tea with sugar!"
+- "Tea without sugar."
+
+The form sending the info is below:
+
+```
+<form action="printorder.php" method="get">
+Select your drink: <input type="radio" value="coffee" name="drink" checked>coffee
+<input type="radio" value="tea" name="drink">tea
+<br>
+With sugar: 
+<select name="sugar">
+<option value=1 selected>yes</option>
+<option value=2>no</option>
+</select>
+<br>
+<input type="submit" value="Send">     
+</form>
+```

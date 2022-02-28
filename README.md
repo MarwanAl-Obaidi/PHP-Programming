@@ -6,6 +6,8 @@ A course I did that goes through the basics of PHP and teaches the student to ha
 - www and PHP
 - Getting to know PHP
 - Variables and control structure
+- On variables and statements
+- Arrays and their management
 
 ## ex_2_1
 The purpose of this exercise is to introduce you to writing programs with the PHP programming language. Below you can see a written PHP program. You simply have to rewrite it.
@@ -91,4 +93,45 @@ With sugar:
 <br>
 <input type="submit" value="Send">     
 </form>
+```
+
+## ex_5_1
+Write a PHP script which prints the absolute value of the number given in the form below.
+
+```
+<form action="absvalue.php" method="get">
+Luku: <input type="text" name="num">
+<input type="submit" value="Send">
+</form>
+```
+
+Example output:
+
+```
+The absolute value of -3 is 3
+```
+
+## ex_6_1
+Your task is to fill in the program below by defining the missing variables, making the output match the example output. Write in only the missing lines, not the entire program.
+
+The code with missing lines:
+
+```
+<?php
+
+    // Your code here
+
+    $output = implode(",",$a);
+    echo $text;
+    echo "I bought $count {$animal}s.\n";
+    echo "Array content: $output";
+?>
+```
+
+Example output:
+
+```
+Special characters marked with a backslash (\) can be used inside quotation marks (" and ").
+I bought 3 cats.
+Array content: 9,7,5
 ```

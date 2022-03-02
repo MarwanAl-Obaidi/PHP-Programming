@@ -135,3 +135,31 @@ Special characters marked with a backslash (\) can be used inside quotation mark
 I bought 3 cats.
 Array content: 9,7,5
 ```
+
+## ex_6_2
+Change the elements of the array table so the program's output matches the example output. Instead of creating a new array, edit the elements in the already existing array. The program:
+
+```
+<?php
+
+    $table = array("Eric Example" => "Example Lane 2",
+          "Cara Coder" => "Programming Path 5",
+          "Pete Programmer" => "Coding Street 5");
+
+    // Your code here
+
+    print_r($table);
+?>
+```
+
+Example output:
+
+```
+Array
+(
+    [Eric Example] => Example Lane 10
+    [Cara Coder] => Coding Street 5
+    [Pete Programmer] => Programming Path 5
+    [Carl Coder] => Coding Street 5
+)
+```

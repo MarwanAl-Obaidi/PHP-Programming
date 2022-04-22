@@ -95,6 +95,23 @@ With sugar:
 </form>
 ```
 
+## ex_4_2
+Create a PHP script which checks the message sent with the form, then prints the name of the sender along with the message. If either the name or message field is empty, the text "You didn't fill all fields!" is printed instead. Unnecessary empty characters need to be deleted from the beginning and end of both strings. All HTML tags need to be deleted as well, so the sender can't do any damage to the guestbook. The form sending the message is as follows:
+
+```
+<form action="guestbook.php" method="get">
+Lähettäjä: <input TYPE="text" name="name"><br>
+Viesti: <input type="text" name="msg"><br>
+<input type="submit" value="Send">     
+</form>
+```
+
+Example output:
+
+```
+Eric Example: Hello, how goes it?
+```
+
 ## ex_5_1
 Write a PHP script which prints the absolute value of the number given in the form below.
 
@@ -109,6 +126,40 @@ Example output:
 
 ```
 The absolute value of -3 is 3
+```
+
+## ex_5_2
+Create a PHP script which prints numbers starting from the one input on the form, down till zero. The numbers should be separated by spaces, but there shouldn't be a space after the last number (the zero, that is). If the input value is less than zero, print the text "The number has to be at least zero!". The form used is as follows:
+
+```
+<form action="numbers.php" method="get">
+Luku: <input TYPE="text" name="num"><br>
+<input type="submit" value="Send">     
+</form>
+```
+
+Example output:
+
+```
+The number has to be at least zero!
+```
+
+## ex_5_3
+Write a PHP script which prints the product and quotient of the two numbers input in the form below. For the quotient, the first number is the dividend and the second the divisor. If the second number is 0, the result of the quotient should be printed as "can't divide by zero".
+
+```
+<form action="calculations.php" method="get">
+First number: <input type="text" name="num1">
+Second number: <input type="text" name="num2">
+<input type="submit" value="Send">
+</form>
+```
+
+Example output:
+
+```
+Product: 448
+Quotient: 7
 ```
 
 ## ex_6_1
@@ -162,4 +213,31 @@ Array
     [Pete Programmer] => Programming Path 5
     [Carl Coder] => Coding Street 5
 )
+```
+
+## ex_6_3
+Your task is to finish the script below, its purpose being to print the sum and average of the values given. The values are given to the script as a single string, with the values themselves separated by comma (for example 4,2,5,2). The values are separated by turning it into an array using the explode() function. The script should also print all the values separated by spaces. Fill in only the missing lines, not the entire program!
+
+The program:
+
+```
+<?php
+
+    $numbers = $_GET['numarray'];
+    $numarray = explode(',',$numbers);
+
+    // Your code here
+
+    echo "The points were: $points\n";
+    echo "Sum of points: $sum\n";
+    echo "Average of points: $avg";
+?>
+```
+
+Example output:
+
+```
+The points were: 5 7 3 23 56 85 2
+The sum of points: 181
+Average of points: 25.857142857143
 ```
